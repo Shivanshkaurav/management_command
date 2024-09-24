@@ -3,6 +3,6 @@ from .models import *
 
 
 def article_list(request):
-    article = Article.objects.all()
+    article = Student.objects.all()
     return render(request, "myapp/index.html", {"article": article})
 
