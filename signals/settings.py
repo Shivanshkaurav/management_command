@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     
     "myapp.apps.MyappConfig",
+    "sk.apps.SkConfig",
 ]
 
 MIDDLEWARE = [
@@ -139,7 +140,7 @@ LOGGING = {
         },
     },
     'loggers': {
-        'myapp': {  # Replace 'myapp' with your actual app name
+        'myapp': {
             'handlers': ['console'],
             'level': 'INFO',
         },
